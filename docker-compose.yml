@@ -1,0 +1,13 @@
+services:
+  alpr-log-analyzer:
+    build: .
+    image: alpr-log-analyzer:latest
+    container_name: alpr-log-analyzer
+    ports:
+      - "5001:5001"
+    volumes:
+      - alpr_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  alpr_data:

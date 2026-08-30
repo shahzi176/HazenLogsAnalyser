@@ -1,0 +1,14 @@
+# Parsed analyses + retained log text (user data, not source)
+data/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Real log excerpt — contains internal IPs / stream addresses, keep local only
+sample_log.txt
+
+# Misc
+server.log
+.DS_Store
