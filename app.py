@@ -1024,8 +1024,14 @@ def summary(file_id):
     ) or '<p class="muted">No issues detected.</p>'
 
     lvl = s["level_counts"]
+    LEVEL_COLOR = {
+        "WARNING": "var(--accent)",
+        "ERROR": "var(--bad)",
+        "CRITICAL": "var(--bad)",
+        "FATAL": "var(--bad)",
+    }
     level_stats = "".join(
-        f'<div class="stat"><div class="v">{lvl.get(k,0):,}</div><div class="l">{k}</div></div>'
+        f'<div class="stat"><div class="v" style="color:{LEVEL_COLOR.get(k, "inherit")}">{lvl.get(k,0):,}</div><div class="l">{k}</div></div>'
         for k in ["DEBUG", "NOTICE", "WARNING", "ERROR", "CRITICAL", "FATAL"] if k in lvl
     )
 
