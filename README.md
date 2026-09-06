@@ -1,8 +1,7 @@
 # Nano Log Analyzer
 
 A small local web app for reading hazenai ALPR application logs — either
-already-decompressed log text files (like `03552logs1`, `32_channels_logs.txt`)
-or raw NanoLog binary files straight off the container (`nano_logs_*`).
+already-decompressed log text files or raw NanoLog binary files straight off the container (`nano_logs_*`).
 Upload a file, get an automatic pipeline-health check plus error/warning
 summary, and search for a specific plate number to see its full
 detection-to-publish timeline.
