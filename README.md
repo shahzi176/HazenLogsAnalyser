@@ -1,4 +1,4 @@
-# ALPR Log Analyzer
+# Nano Log Analyzer
 
 A small local web app for reading hazenai ALPR application logs — either
 already-decompressed log text files (like `03552logs1`, `32_channels_logs.txt`)
